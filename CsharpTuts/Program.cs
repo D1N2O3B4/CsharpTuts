@@ -12,10 +12,13 @@ namespace CsharpTuts
         {
             int x = 12;
             string y = "Help";
+            bool a = true;
+            char c = '$';
+            ushort i = 15;
 
-            Console.Write(y+" "+x+"\n");
+            Console.WriteLine(c+"y"+i+x+a);
             Console.WriteLine("Done");
-            //Console.Beep();
+            Console.Beep();
            
         }
     }
