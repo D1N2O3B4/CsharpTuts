@@ -11,7 +11,7 @@ namespace CsharpTuts
     {
         static void Main(string[] args)
         {
-            double x = Math.Pow(2,3);    
+            double x = Math.Pow(2,3);
 
             //string y = Console.ReadLine();
 
@@ -60,7 +60,7 @@ namespace CsharpTuts
             Console.WriteLine("you just typed "+y);
             Console.WriteLine(var);*/
             //Console.Beep();
-            Console.WriteLine("INPUT NUMBER:");
+            /*Console.WriteLine("INPUT NUMBER:");
             int num = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 0; i < num; i++)
@@ -69,7 +69,32 @@ namespace CsharpTuts
                 Console.Write("@");
                 }
                 Console.WriteLine();
+            }*/
+
+            Random random = new Random();
+            int number = random.Next(1,5);
+
+            Console.WriteLine("Guess the number");
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            while (choice != number) {
+                Console.WriteLine("Wrong");
+                if (choice < number)
+                {
+                 Console.WriteLine("Number is higher than what you chose");
+               
+                }
+                else {
+                    Console.WriteLine("Number is lower than what you chose");
+
+                }
+                Console.WriteLine("Guess the number");
+                choice = Convert.ToInt32(Console.ReadLine());
+
             }
+            Console.WriteLine("Yeah "+choice+" is the number");
+            
+            
            
         }
     }
