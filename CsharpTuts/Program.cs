@@ -10,7 +10,13 @@ namespace CsharpTuts
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hekko");
+            int x = 12;
+            string y = "Help";
+
+            Console.Write(y+" "+x+"\n");
+            Console.WriteLine("Done");
+            //Console.Beep();
+           
         }
     }
 }
